@@ -35,9 +35,16 @@ public class WhileLoops {
        return ""; // update or remove this line. It is only there so the tests do not show an error.
     }
 
+    /**
+     * Calculates all the factors of the given number.
+     * @param num A int value greater than 0
+     * @return A string of all the factors of the given number separated by a space.
+     * Ex. factors(12) returns "The factors of 12 are: 1 2 3 4 6 12 "
+     */
+    public static String factors(int num) {
 
-
-
+        return ""; // update or remove this line. It is only there so the tests do not show an error.
+    }
 
 
 }

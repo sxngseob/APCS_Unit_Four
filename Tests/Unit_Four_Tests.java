@@ -27,84 +27,8 @@ class Unit_Four_Tests {
         System.setErr(originalErr);
     }
 
-    @Test
-    @Order(1)
-    void HereToThereTestValid() {
-        String expected = "-2 -1 0 1 2 3 4 5 6 ";
-        String actual = WhileLoops.fromHereToThere(-2, 6);
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    @Order(2)
-    void HereToThereTestInvalid() {
-        String expected = "Invalid input";
-        String actual = WhileLoops.fromHereToThere(6, 5);
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    @Order(3)
-    void CountPosAndNegTest() throws IOException {
-        String[] args = null;
-        System.setIn(new FileInputStream("data/set1.txt"));
-        String expected = "There were 8 positive and 6 negative numbers";
-        String actual = WhileLoops.countPosAndNeg();
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    @Order(4)
-    void FindMinMaxTest1() throws IOException {
-        String[] args = null;
-        System.setIn(new FileInputStream("data/min_max1.txt"));
-        String expected = "Max value is: 0. Min value is: -9";
-        String actual = WhileLoops.findMinAndMax();
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    @Order(5)
-    void FindMinMaxTest2() throws IOException {
-        String[] args = null;
-        System.setIn(new FileInputStream("data/min_max2.txt"));
-        String expected = "Max value is: 105. Min value is: 99";
-        String actual = WhileLoops.findMinAndMax();
-        assertEquals(expected, actual);
-    }
 
 
-    @Test
-    @Order(10)
-    void printingHashTagsTest1() {
-        String expected = "##########";
-        String actual = ForLoops.printingHashTags(10);
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    @Order(11)
-    void printingHashTagsTest2() {
-        String expected = "";
-        String actual = ForLoops.printingHashTags(-1);
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    @Order(12)
-    void countDownTest1() {
-        String expected = "4 3 2 1 0 -1 -2 -3 -4 ";
-        String actual = ForLoops.countDown(4, -4);
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    @Order(13)
-    void countDownTest2() {
-        String expected = "-1 -2 -3 -4 -5 -6 -7 -8 ";
-        String actual = ForLoops.countDown(-8, -1);
-        assertEquals(expected, actual);
-    }
 
     @Test
     @Order(18)
