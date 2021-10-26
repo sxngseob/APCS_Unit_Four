@@ -15,4 +15,8 @@ public class StringProblems {
 
         return "";
     }
+
+    public static boolean isPalindrome(String word) {
+        return true;
+    }
 }
