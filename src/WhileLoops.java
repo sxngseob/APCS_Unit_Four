@@ -12,7 +12,17 @@ public class WhileLoops {
      */
     public static String fromHereToThere(int num1, int num2) {
 
-        return ""; // update or remove this line. It is only there so the tests do not show an error.
+        String blank = "";
+
+        if (num1 < num2) {
+            while (num1 <= num2) {
+                blank += num1 + " ";
+                num1++;
+            }
+        } else {
+            return "Invalid input";
+        }
+        return blank;
     }
 
     /**
@@ -22,7 +32,25 @@ public class WhileLoops {
      */
     public static String countPosAndNeg() {
 
-        return ""; // update or remove this line. It is only there so the tests do not show an error.
+        Scanner scan = new Scanner(System.in);
+        int pos = 0;
+        int neg = 0;
+
+        System.out.print("Enter a positive or negative number or 0 to quit: ");
+        int a = scan.nextInt();
+
+        while(a != 0){
+            if (a > 0) {
+                pos++;
+            }
+            if (a < 0) {
+                neg++;
+            }
+            System.out.print("Enter a positive or negative number or 0 to quit: ");
+            a = scan.nextInt();
+        }
+
+        return "There were " + pos + " positive and " + neg + " negative numbers"; // update or remove this line. It is only there so the tests do not show an error.
     }
 
     /**
@@ -31,7 +59,6 @@ public class WhileLoops {
      * @return A string giving the minimum and maximum. Ex. "The Max value is: 45\nThe Min value is: -87"
      */
     public static String findMinAndMax() {
-
        return ""; // update or remove this line. It is only there so the tests do not show an error.
     }
 
